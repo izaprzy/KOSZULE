@@ -1,0 +1,30 @@
+// Extends - space (padding)
+// ------------------------------------------
+// * u-space--{name}
+// * v - vertical
+// * h - horizontal
+// ------------------------------------------
+
+@each $name, $value in $dimensions {
+  %u-position--top-#{$name} {
+    @include interpolation('top', $value);
+  }
+}
+
+@each $name, $value in $dimensions {
+  %u-position--right-#{$name} {
+    @include interpolation('right', $value);
+  }
+}
+
+@each $name, $value in $dimensions {
+  %u-position--bottom-#{$name} {
+    @include interpolation('bottom', $value);
+  }
+}
+
+@each $name, $value in $dimensions {
+  %u-position--left-#{$name} {
+    @include interpolation('left', $value);
+  }
+}

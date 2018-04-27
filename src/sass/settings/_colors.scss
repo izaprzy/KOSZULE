@@ -1,0 +1,50 @@
+// Global
+// ------------------------------------------
+$color-transparent: rgba(0, 0, 0, 0);
+$color-black: #000000;
+$color-white: #ffffff;
+
+// Brand (typography & icons)
+// ------------------------------------------
+$color-brand: (
+  'gray': #4a4a4a,
+  'blue-light': #abc7df,
+  'blue': #0d7096,
+  'green': #217761,
+  'red': #ee6268,
+  'yellow': #ecd534,
+  'violet': #6858e2,
+);
+
+$color-grayscale: (
+  'default': #eaeaea,
+  'white-transparent': rgba(#ffffff, .7),
+  'black-transparent': rgba(#000000, .7),
+  'gray-light': #f5f5f5,
+  'gray': #d7d7d7,
+  'gray-dark': #979797,
+);
+
+// Base (typography)
+// ------------------------------------------
+$color-base: (
+  'default': $color-black,
+  'white': $color-white,
+  'black': $color-black,
+);
+
+// Color names based on http://chir.ag/projects/name-that-color/
+$color-background: (
+  'default': $color-white,
+  'gray-light': #f5f5f5,
+  'gray': #d7d7d7,
+  'spring-wood': #f9fAf4,
+  'mine-shaft': #292929,
+  'pigeon-post': #acc6dd,
+);
+
+//Button colors list: background and font color
+$color-button: (
+  'default': (#6652e5, $color-white),
+  'blue-light': (#abc7df, $color-black),
+);

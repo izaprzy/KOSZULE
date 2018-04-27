@@ -1,0 +1,13 @@
+.text--bold {
+  @extend %u-font--bold;
+}
+
+.text--light {
+  @extend %u-font--light;
+}
+
+@each $current-color in $color-base {
+  .text--#{nth($current-color, 1)} {
+    color: nth($current-color, 2);
+  }
+}

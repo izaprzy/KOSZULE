@@ -1,0 +1,31 @@
+// Typography - fonts
+// ------------------------------------------
+$typo-font: (
+  'book': #{"'Gotham Book'"},
+  'book-italic': #{"'Gotham Book Italic'"},
+  'thin': #{"'Gotham Thin'"},
+  'thin-italic': #{"'Gotham Thin Italic'"},
+  'light': #{"'Gotham Light'"},
+  'light-italic': #{"'Gotham Light Italic'"},
+  'extra-light': #{"'Gotham Extra Light'"},
+  'extra-light-italic': #{"'Gotham Extra Light Italic'"},
+  'medium': #{"'Gotham Medium'"},
+  'medium-italic': #{"'Gotham Medium Italic'"},
+  'bold': #{"'Gotham Bold'"},
+  'bold-italic': #{"'Gotham Bold Italic'"},
+  'black': #{"'Gotham Black'"},
+  'black-italic': #{"'Gotham Black Italic'"},
+  'ultra': #{"'Gotham Ultra'"},
+  'ultra-italic': #{"'Gotham Ultra Italic'"},
+);
+
+// Typography - size
+// ------------------------------------------
+$typo-size: (
+  'extra-small': ($mobile: 8px, $desktop: 8px),
+  'small': ($mobile: 11px, $desktop: 12px),
+  'default': ($mobile: 12px, $desktop: 16px),
+  'medium': ($mobile: 16px, $desktop: 24px),
+  'big': ($mobile: 24px, $desktop: 32px),
+  'large': ($mobile: 32px, $desktop: 50px),
+);

@@ -1,0 +1,27 @@
+// Icon - size
+// ------------------------------------------
+
+$icon-color: (
+  'default': #eaeaea,
+  'white-transparent': rgba(#ffffff, .7),
+  'black-transparent': rgba(#000000, .7),
+  'gray-light': #f5f5f5,
+  'gray-medium': #d7d7d7,
+  'gray-dark': #979797,
+  'gray': #4a4a4a,
+  'blue-light': #4fb4db,
+  'blue': #0d7096,
+  'green': #217761,
+  'red': #da4e5e,
+  'yellow': #d49408,
+  'violet': #724699,
+  'baltic-sea': #19181d,
+);
+
+$icon-size: (
+  'small': 0.65em,
+  'default': 1em,
+  'medium': 1.35em,
+  'big': 1.65em,
+  'large': 2em
+);

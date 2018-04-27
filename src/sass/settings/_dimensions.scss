@@ -1,0 +1,11 @@
+// Dimensions - utils
+// ------------------------------------------
+$dimensions: (
+  'extra-small':  ($mobile: 4px,  $desktop: 8px),
+  'small':        ($mobile: 8px,  $desktop: 12px),
+  'regular':      ($mobile: 14px, $desktop: 18px),
+  'medium':       ($mobile: 20px, $desktop: 50px),
+  'big':          ($mobile: 40px, $desktop: 100px),
+  'large':        ($mobile: 60px, $desktop: 200px),
+  'section':      ($mobile: 40px, $desktop: 120px),
+);
