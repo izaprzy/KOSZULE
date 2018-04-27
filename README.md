@@ -8,7 +8,7 @@ Po sklonowaniu repo...
 
 ```yarn install```
 
-Chwilę pomieli, poinstaluje i bęœdzie gotowe.
+Chwilę pomieli, poinstaluje i będzie gotowe.
 
 ## Odpalenie serwera
 
