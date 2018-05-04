@@ -1,4 +1,4 @@
-function includeHTML() {
+function buildPage() {
   var z, i, elmnt, file, xhttp;
   /*loop through a collection of all HTML elements:*/
   z = document.getElementsByTagName("*");
@@ -15,7 +15,7 @@ function includeHTML() {
           if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
           /*remove the attribute, and call this function once more:*/
           elmnt.removeAttribute("w3-include-html");
-          includeHTML();
+          buildPage();
         }
       }      
       xhttp.open("GET", file, true);
