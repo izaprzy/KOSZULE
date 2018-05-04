@@ -1,2 +1,4 @@
 node_modules/
 .idea/workspace.xml
+yarn.lock
+package-lock.json
