@@ -7,13 +7,12 @@ $color-white: #ffffff;
 // Brand (typography & icons)
 // ------------------------------------------
 $color-brand: (
-  'gray': #4a4a4a,
-  'blue-light': #abc7df,
-  'blue': #0d7096,
-  'green': #217761,
-  'red': #ee6268,
-  'yellow': #ecd534,
-  'violet': #6858e2,
+  'black-russian': #000227,
+  'nile-blue': #1a2f4f,
+  'fiord': #4d5d6c,
+  'gull-gray': #96a8b2,
+  'concrete': #f3f3f3,
+  'mystic': #e1e7ea,
 );
 
 $color-grayscale: (
@@ -28,7 +27,7 @@ $color-grayscale: (
 // Base (typography)
 // ------------------------------------------
 $color-base: (
-  'default': $color-black,
+  'default': #{map-get($color-brand, nile-blue)},
   'white': $color-white,
   'black': $color-black,
 );
@@ -36,15 +35,22 @@ $color-base: (
 // Color names based on http://chir.ag/projects/name-that-color/
 $color-background: (
   'default': $color-white,
-  'gray-light': #f5f5f5,
-  'gray': #d7d7d7,
-  'spring-wood': #f9fAf4,
-  'mine-shaft': #292929,
-  'pigeon-post': #acc6dd,
+  'horizon': #5d889f,
+  'white-rock': #ede5d8,
+  'double-spanish-white': #e7cbb9,
+  'satin-linen': #eceddf,
+  'geyser': #d3e3e5,
+  'bizarre': #eddcd8,
+  'white-lilac': #e4e5f5,
+  'black-squeeze': #e4f3f5,
 );
 
 //Button colors list: background and font color
 $color-button: (
-  'default': (#6652e5, $color-white),
-  'blue-light': (#abc7df, $color-black),
+  'blue-ribbon': (#1246fb, $color-white),
+  'dark-blue': #0023c8,
+  'caribbean-grean': (#00c899, $color-white),
+  'nile-blue': ($color-transparent, #{map-get($color-brand, nile-blue)}),
+  'fiord': ($color-transparent, #{map-get($color-brand, fiord)}),
+  'milano-red': #c82300,
 );

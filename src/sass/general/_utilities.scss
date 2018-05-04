@@ -6,8 +6,18 @@
   @extend %u-font--light;
 }
 
+.text-small {
+  @extend %u-text--small;
+}
+
 @each $current-color in $color-base {
   .text--#{nth($current-color, 1)} {
+    color: nth($current-color, 2);
+  }
+}
+
+@each $current-color in $color-brand{
+  .text-brand--#{nth($current-color, 1)} {
     color: nth($current-color, 2);
   }
 }
