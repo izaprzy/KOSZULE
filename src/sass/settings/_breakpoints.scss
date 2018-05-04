@@ -6,16 +6,16 @@
 // * device-big
 // ------------------------------------------
 $mobile: 320px;
-$mobile-big: 480px;
+$mobile-medium: 375px;
+$mobile-big: 425px;
 $tablet: 768px;
 $tablet-big: 1024px;
-$desktop: 1200px;
-$desktop-medium: 1440px;
-$desktop-full: 1920px;
+$desktop: 1440px;
+$desktop-retina: 2560px;
 
 // Default page container
 // ------------------------------------------
-$container: $desktop-medium;
+$container: $desktop;
 
 // Breakpoints map
 // ------------------------------------------

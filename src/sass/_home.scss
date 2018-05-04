@@ -1,0 +1,44 @@
+.nav-container {
+  width: 1440px;
+  height: 64px;
+  margin: 0 auto;
+  background: #{map-get($color-brand, nile-blue)};
+  color: $color-white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  .apposta-logo {
+    height: 20px;
+    margin: 22px 24px;
+    color: $color-white;
+  }
+}
+
+.primary-nav, .menu-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.nav__link {
+  padding: 24px 18px;
+  color: #{map-get($color-brand, concrete)};
+  opacity: 0.5;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.menu-nav__item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+}
