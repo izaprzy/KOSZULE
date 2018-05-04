@@ -3,7 +3,7 @@
 body {
   @extend %u-text--default;
   @extend %u-font--thin;
-  background: map-get($color-brand, 'black-russian');
+  background: map-get($color-base, 'white');
   margin: 0;
   color: map-get($color-base, 'default');
   overflow-x: hidden;
