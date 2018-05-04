@@ -116,6 +116,9 @@ body {
 .text--light {
   font-family: 'Gotham Light'; }
 
+.button {
+  font-family: 'Gotham Medium'; }
+
 .text--bold {
   font-family: 'Gotham Bold'; }
 
@@ -137,11 +140,29 @@ body {
     body {
       font-size: 16px; } }
 
+.button {
+  padding-right: calc(5.35714vw + 22.85714px);
+  padding-left: calc(5.35714vw + 22.85714px); }
+  @media screen and (max-width: 319px) {
+    .button {
+      padding-right: 40px;
+      padding-left: 40px; } }
+  @media screen and (min-width: 1440px) {
+    .button {
+      padding-right: 100px;
+      padding-left: 100px; } }
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
 body {
   background: #000227;
-  margin: 0;
   color: #1a2f4f;
-  overflow-x: hidden; }
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  text-align: left; }
 
 input:-webkit-autofill {
   box-shadow: 0 0 0 50px #ffffff inset;
@@ -168,13 +189,22 @@ pre {
   padding: 0; }
 
 a {
-  text-decoration: none;
-  color: #000000; }
+  color: #000000;
+  text-decoration: none; }
 
 ol, ul {
+  list-style: none;
   margin: 0;
-  padding: 0;
-  list-style: none; }
+  padding: 0; }
+
+.button {
+  background: #f3f3f3;
+  border: 1px solid transparent;
+  color: #96a8b2;
+  display: inline-block;
+  height: 24px;
+  letter-spacing: 1.3px;
+  text-transform: uppercase; }
 
 .text--default {
   color: #1a2f4f; }
@@ -202,6 +232,12 @@ ol, ul {
 
 .text-brand--mystic {
   color: #e1e7ea; }
+
+#page-wrapper {
+  background: #ffffff;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%; }
 
 .nav-container {
   width: 1440px;

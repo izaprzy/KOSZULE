@@ -1,0 +1,13 @@
+// Global buttons
+// ------------------------------------------
+.button {
+    @extend %u-font--medium;
+    @extend %u-space--h-big;
+    background: map-get($color-brand, 'concrete');
+    border: 1px solid transparent;
+    color: map-get($color-brand, 'gull-gray');
+    display: inline-block;
+    height: 24px;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
