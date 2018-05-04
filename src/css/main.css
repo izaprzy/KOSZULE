@@ -122,13 +122,13 @@ body {
 .text--bold {
   font-family: 'Gotham Bold'; }
 
-.text-small {
+.button, .text-small {
   font-size: calc(0.08929vw + 10.71429px); }
   @media screen and (max-width: 319px) {
-    .text-small {
+    .button, .text-small {
       font-size: 11px; } }
   @media screen and (min-width: 1440px) {
-    .text-small {
+    .button, .text-small {
       font-size: 12px; } }
 
 body {
@@ -139,18 +139,6 @@ body {
   @media screen and (min-width: 1440px) {
     body {
       font-size: 16px; } }
-
-.button {
-  padding-right: calc(5.35714vw + 22.85714px);
-  padding-left: calc(5.35714vw + 22.85714px); }
-  @media screen and (max-width: 319px) {
-    .button {
-      padding-right: 40px;
-      padding-left: 40px; } }
-  @media screen and (min-width: 1440px) {
-    .button {
-      padding-right: 100px;
-      padding-left: 100px; } }
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -204,6 +192,7 @@ ol, ul {
   display: inline-block;
   height: 24px;
   letter-spacing: 1.3px;
+  padding: 0 24px;
   text-transform: uppercase; }
 
 .text--default {
