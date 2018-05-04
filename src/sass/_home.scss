@@ -1,5 +1,5 @@
 .nav-container {
-  width: 1440px;
+  width: $desktop;
   height: 64px;
   margin: 0 auto;
   background: #{map-get($color-brand, nile-blue)};
