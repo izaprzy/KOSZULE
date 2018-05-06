@@ -1,29 +1,28 @@
 <header class="header">
     <div class="header__container container">
-        <nav class="navbar text--bold">
-            <div class="navbar__content">
-                <div class="header__logo">
-                    <a href="#"><img src="public/apposta-logo.svg"></a>
-                </div>
-                <a class="navbar__basket" href="#">
-                    <div class="header__basket--icon">
-                        <a href="#"><img src="public/icons/Icon_Navigation_Bag.png"></a>
-                    </div>
-                    <span class="navbar__basket--icon">99</span>
-                    <div class="navbar__basket--tooltip">
-                        <div>99 items in your basket</div>
-                        <button class="navbar__basket--checkout">Proceed to checkout</button>
-                    </div>
-                </a>
-                <a href="#" class="navbar__menu" type="button">
-                <span class="navbar__menu--open">
-                    <img src="public/icons/Icon_Navigation_Menu.png">
-                </span>
-                    <span class="navbar__menu--close hide">
-                    <img src="public/icons/Icon_Navigation_Menu-Close.png">
-                </span>
-                </a>
-            </div>
+        <nav class="navbar text--white text--bold">
+            <ul class="navbar__content">
+                <li class="header__logo">
+                    <a href="#"><img class="header__logo--icon" src="public/apposta-logo.svg" alt="logo"></a>
+                </li>
+                <li class="navbar__basket">
+                    <a href="#">
+                        <img class="header__basket--icon" src="public/icons/Icon_Navigation_Bag.png" alt="icon-bag">
+                        <div class="navbar__basket--badge"><span class="text--light">99</span></div>
+                        <div class="navbar__basket--tooltip hide">
+                            <div>99 items in your basket</div>
+                            <button class="navbar__basket--checkout">Proceed to checkout</button>
+                        </div>
+                    </a>
+                </li>
+                <li class="navbar__menu">
+                    <a href="#">
+                        <img class="navbar__menu--open" src="public/icons/Icon_Navigation_Menu.png" alt="menu">
+                        <img class="navbar__menu--close hide"src="public/icons/Icon_Navigation_Menu-Close.png" alt="menu-close">
+                    </a>
+                </li>
+
+            </ul>
 
             <div class="navbar__primary hide">
                 <ul class="navbar__primary">
@@ -31,7 +30,7 @@
                     <li><a href="home.html">Browse styles</a></li>
                 </ul>
                 <ul class="dropdown-menu__header">
-                    <li class="dropdown -odinary"><a class="dropdown-toggle rotate-arrrow-icon" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Guides</a>
+                    <li><a href="#">Guides</a>
                         <div class="dropdown-menu -guides-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item -has-children" href="#">How to create your custom shirt</a>
                             <ul>
                                 <li><a href="#">Design your own shirt</a></li>
@@ -61,20 +60,28 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="dropdown -language"><span class="label__header d-xl-none">Language</span><a class="dropdown-toggle rotate-arrrow-icon" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">EN</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item">De</a><a class="dropdown-item">Ru</a></div>
+                    <li>
+                        <ul>
+                            <li><span>Language</span></li>
+                            <li><a href="#">EN</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">De</a></li>
+                            <li><a href="#">Ru</a></li>
+                        </ul>
                     </li>
-                    <li class="dropdown -currency"><span class="label__header d-xl-none">Currency</span><a class="dropdown-toggle rotate-arrrow-icon" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Euro</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item">USD</a><a class="dropdown-item">GBP</a><a class="dropdown-item">UAH</a></div>
+                    <li>
+                        <span>Currency</span><a>Euro</a>
+                        <div><a >USD</a><a >GBP</a><a >UAH</a></div>
                     </li>
-                    <li class="user-menu__header dropdown -odinary"><a class="dropdown-toggle rotate-arrrow-icon" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tomasz Zelmanski</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">My Apposta</a><a class="dropdown-item" href="#">Orders</a><a class="dropdown-item" href="#">Measurements</a><a class="dropdown-item" href="#">My Account</a><a class="dropdown-item" href="#">Logout</a></div>
+                    <li><a>Tomasz Zelmanski</a>
+                        <div><a href="#">My Apposta</a><a >Orders</a><a href="#">Measurements</a><a href="#">My Account</a><a class="dropdown-item" href="#">Logout</a></div>
                     </li>
-                    <li class="dropdown d-xl-none -odinary"><a class="dropdown-toggle rotate-arrrow-icon" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Apposta</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">About us</a><a class="dropdown-item" href="#">The Apposta shirt</a><a class="dropdown-item" href="#">OEKO_TEX certification</a></div>
+                    <li><a >Apposta</a>
+                        <div><a href="#">About us</a><a href="#">The Apposta shirt</a><a href="#">OEKO_TEX certification</a></div>
                     </li>
-                    <li class="dropdown d-xl-none -odinary"><a class="dropdown-toggle rotate-arrrow-icon" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Information</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">Resolution and Returns</a><a class="dropdown-item" href="#">Shipping and delivery</a><a class="dropdown-item" href="#">FAQ customer care</a></div>
+                    <li><a >Information</a>
+                        <div ><a href="#">Resolution and Returns</a><a href="#">Shipping and delivery</a><a class="dropdown-item" href="#">FAQ customer care</a></div>
                     </li>
                 </ul>
                 <ul class="socials-list social-menu__header d-xl-none">
