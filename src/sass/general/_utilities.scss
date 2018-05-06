@@ -1,7 +1,7 @@
 .container {
-  width: 100vh;
-  max-width: $container;
   margin: 0 auto;
+  max-width: $container;
+  width: 100vw;
 }
 
 .hide {
