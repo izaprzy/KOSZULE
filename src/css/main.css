@@ -116,10 +116,10 @@
 body {
   font-family: 'Gotham Thin'; }
 
-.text--light {
+.text--light, .footer__line--long, .footer__top--customer-care-desc {
   font-family: 'Gotham Light'; }
 
-.button {
+.button, .footer__container {
   font-family: 'Gotham Medium'; }
 
 .text--bold, .tag {
@@ -154,6 +154,18 @@ body {
     .navbar {
       padding-right: 18px;
       padding-left: 18px; } }
+
+.footer__top--customer-care-contact {
+  margin-top: calc(0.35714vw + 12.85714px);
+  margin-bottom: calc(0.35714vw + 12.85714px); }
+  @media screen and (max-width: 319px) {
+    .footer__top--customer-care-contact {
+      margin-top: 14px;
+      margin-bottom: 14px; } }
+  @media screen and (min-width: 1440px) {
+    .footer__top--customer-care-contact {
+      margin-top: 18px;
+      margin-bottom: 18px; } }
 
 #page-wrapper {
   background: #ffffff;
@@ -213,6 +225,22 @@ ol, ul {
 
 .hide {
   display: none; }
+
+@media screen and (min-width: 1440px) {
+  .hidden-desktop {
+    display: none; } }
+
+@media screen and (max-width: 1439px) {
+  .hidden-mobile {
+    display: none; } }
+
+@media screen and (min-width: 1440px) {
+  .visible-desktop {
+    display: block; } }
+
+@media screen and (max-width: 1439px) {
+  .visible-mobile {
+    display: block; } }
 
 .text--default {
   color: #1a2f4f; }
@@ -352,6 +380,10 @@ ol, ul {
   background-color: rgba(0, 0, 0, 0);
   color: #96a8b2; }
 
+.button--save {
+  border: 1px solid ;
+  background-color: rgba(0, 0, 0, 0); }
+
 .button--order-success {
   border: 1px solid #00c899;
   background-color: #00c891;
@@ -383,5 +415,53 @@ ol, ul {
   border: 1px solid rgba(0, 0, 0, 0);
   background-color: #1246fb;
   color: #ffffff; }
+
+.footer__container {
+  background: #1a2f4f;
+  color: #96a8b2; }
+
+.footer__top {
+  height: 200px;
+  padding: 28px 142px; }
+
+.footer__top--items {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between; }
+
+.footer__top--name {
+  color: #f3f3f3;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; }
+
+.footer__line--long {
+  border-top: solid 1px;
+  height: 1px;
+  margin: 11px 0 9px;
+  opacity: 0.25;
+  width: 94px; }
+
+.footer__top--link {
+  color: #96a8b2;
+  font-size: 11px;
+  line-height: 1.45;
+  padding-top: 8px;
+  text-transform: uppercase; }
+  .footer__top--link:hover {
+    border-bottom: 1px solid #96a8b2; }
+
+.footer__top--customer-care {
+  font-size: 13px;
+  line-height: 1.23;
+  text-align: right;
+  width: 448px; }
+
+.footer__top--customer-care-line {
+  display: flex;
+  justify-content: flex-end; }
+
+.footer__top--any-questions {
+  margin-right: 16px; }
 
 /*# sourceMappingURL=maps/main.css.map */

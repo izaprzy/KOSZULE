@@ -20,6 +20,30 @@
   @extend %u-text--small;
 }
 
+.hidden-desktop {
+  @include min-screen($desktop) {
+    display: none;
+  }
+}
+
+.hidden-mobile {
+  @include max-screen($desktop) {
+    display: none;
+  }
+}
+
+.visible-desktop {
+  @include min-screen($desktop) {
+    display: block;
+  }
+}
+
+.visible-mobile {
+  @include max-screen($desktop) {
+    display: block;
+  }
+}
+
 @each $current-color in $color-base {
   .text--#{nth($current-color, 1)} {
     color: nth($current-color, 2);

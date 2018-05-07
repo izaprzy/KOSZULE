@@ -1,0 +1,67 @@
+.footer__container {
+  @extend %u-font--medium;
+  background: map-get($color-brand, 'nile-blue');
+  color: map-get($color-brand, 'gull-gray');
+}
+
+.footer__top {
+  height: 200px;
+  padding: 28px 142px;
+}
+
+.footer__top--items {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.footer__top--name {
+  color: map-get($color-brand, 'concrete');
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.footer__line--long {
+  @extend %u-font--light;
+  border-top: solid 1px map-get($color-brand, 'mercury');
+  height: 1px;
+  margin: 11px 0 9px;
+  opacity: 0.25;
+  width: 94px;
+}
+
+.footer__top--link {
+  color: map-get($color-brand, 'gull-gray');
+  font-size: 11px;
+  line-height: 1.45;
+  padding-top: 8px;
+  text-transform: uppercase;
+
+  &:hover {
+    border-bottom: 1px solid map-get($color-brand, 'gull-gray');
+  }
+}
+.footer__top--customer-care {
+  font-size: 13px;
+  line-height: 1.23;
+  text-align: right;
+  width: 448px;
+}
+
+.footer__top--customer-care-line {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer__top--customer-care-contact {
+  @extend %u-distance--v-regular
+}
+
+.footer__top--customer-care-desc {
+  @extend %u-font--light;
+}
+
+.footer__top--any-questions {
+  margin-right: 16px;
+}
