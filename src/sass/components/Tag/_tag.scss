@@ -1,0 +1,28 @@
+// Global tags
+// ------------------------------------------
+.tag {
+    @extend %u-font--bold;
+    background: map-get($color-brand, 'concrete');
+    border: 1px solid transparent;
+    box-shadow: 2px 0 2px 0 rgba(150, 168, 178, 0.24);
+    color: map-get($color-brand, 'gull-gray');
+    cursor: pointer;
+    display: inline-block;
+    font-size: 11px;
+    height: 24px;
+    padding: 0 8px;
+    text-transform: capitalize;
+
+    &.tag--secondary {
+        @extend %u-font--book;
+    }
+}
+
+@each $name,
+$values in $color-tags {
+    .tag--#{$name} {
+        border: 1px solid nth($values, 1);
+        background-color: nth($values, 2);
+        color: nth($values, 3);
+    }
+}
