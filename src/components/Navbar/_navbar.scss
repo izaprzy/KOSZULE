@@ -1,0 +1,70 @@
+.navbar {
+  align-items: center;
+  //background: #{map-get($color-brand, nile-blue)}; commented until logo and icon will be white
+  background: #{map-get($color-brand, fiord)};
+  display: flex;
+  flex-wrap: wrap;
+  height: 48px;
+  justify-content: space-between;
+  position: relative;
+
+  @extend %u-space--h-regular;
+  @include min-screen($desktop) {
+    height: 64px;
+  }
+}
+
+.navbar__content {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__logo {
+  flex-grow: 1;
+  height: 16px;
+}
+
+.header__logo--icon {
+  height: 16px;
+
+  @include min-screen($desktop) {
+    height: 20px;
+  }
+}
+
+.navbar__basket {
+  position: relative;
+
+  .header__basket--icon {
+    height: 16px;
+    margin-right: 24px;
+
+    @include min-screen($desktop) {
+      margin-right: 0;
+    }
+  }
+
+  .navbar__basket--badge {
+    align-items: center;
+    //background: #{map-get($color-brand, nile-blue)}; commented until logo and icon will be white
+    background: #{map-get($color-brand, caribbean-grean)};
+    border: 2px solid transparent;
+    border-radius: 50%;
+    display: flex;
+    font-size: 8px;
+    height: 12px;
+    justify-content: center;
+    left: 25%;
+    position: absolute;
+    transform: translateY(-35%);
+    top: 70%;
+    width: 12px;
+   }
+}
+
+.navbar__menu--open, .navbar__menu--close {
+  height: 16px;
+}

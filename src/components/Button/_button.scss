@@ -1,0 +1,28 @@
+// Global buttons
+// ------------------------------------------
+.button {
+    @extend %u-font--medium;
+    background: map-get($color-brand, 'concrete');
+    border: 1px solid transparent;
+    color: map-get($color-brand, 'gull-gray');
+    cursor: pointer;
+    display: inline-block;
+    font-size: 11px;
+    height: 24px;
+    letter-spacing: 1.3px;
+    padding: 0 24px;
+    text-transform: uppercase;
+
+    &--expand {
+        height: 32px;
+    }
+}
+
+@each $name,
+$values in $color-button {
+    .button--#{$name} {
+        border: 1px solid nth($values, 1);
+        background-color: nth($values, 2);
+        color: nth($values, 3);
+    }
+}
