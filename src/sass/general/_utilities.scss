@@ -1,3 +1,13 @@
+.container {
+  width: 100vh;
+  max-width: $container;
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
+}
+
 .text--bold {
   @extend %u-font--bold;
 }
