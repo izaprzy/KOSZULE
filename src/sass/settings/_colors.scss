@@ -13,7 +13,10 @@ $color-brand: (
   'gull-gray': #96a8b2,
   'concrete': #f3f3f3,
   'mystic': #e1e7ea,
-  'caribbean-grean': #00c899,
+  'caribbean-green': #00c899,
+  'caribbean-green-btn': #00c891,
+  'milano-red': #c82300,
+  'electric-blue': #1246fb,
 );
 
 $color-grayscale: (
@@ -46,12 +49,19 @@ $color-background: (
   'black-squeeze': #e4f3f5,
 );
 
-//Button colors list: background and font color
+//Button colors list: border, background and font color
 $color-button: (
-  'blue-ribbon': (#1246fb, $color-white),
-  'dark-blue': #0023c8,
-  'caribbean-grean': (#00c899, $color-white),
-  'nile-blue': ($color-transparent, #{map-get($color-brand, nile-blue)}),
-  'fiord': ($color-transparent, #{map-get($color-brand, fiord)}),
-  'milano-red': #c82300,
+  'default': (#{map-get($color-brand, gull-gray)}, $color-transparent, #{map-get($color-brand, fiord)}),
+  'success': (#{map-get($color-brand, caribbean-green-btn)}, $color-transparent, #{map-get($color-brand, caribbean-green-btn)}),
+  'danger': (#{map-get($color-brand, milano-red)}, $color-transparent, #{map-get($color-brand, milano-red)}),
+  'disabled': (#e9e9e9, $color-transparent, rgba(map-get($color-brand, gull-gray), 0.5)),
+  'order-add': (#e9e9e9, $color-transparent, #{map-get($color-brand, gull-gray)}),
+  'order-success': (#{map-get($color-brand, caribbean-green)}, #{map-get($color-brand, caribbean-green-btn)}, $color-white),
+);
+
+//Tags colors list: border, background and font color
+$color-tags: (
+  'default': ($color-transparent, $color-white, #{map-get($color-brand, nile-blue)}),
+  'sale': ($color-transparent, #{map-get($color-brand, milano-red)}, $color-white),
+  'new': ($color-transparent, #{map-get($color-brand, electric-blue)}, $color-white),
 );
